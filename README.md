@@ -1,20 +1,23 @@
 # flyway-migration-helper README
 
-This is the README for your extension "flyway-migration-helper". After writing up a brief description, we recommend including the following sections.
-
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+The "flyway-migration-helper" is a Visual Studio Code extension designed to streamline the process of creating Flyway migration files. It provides a context menu command that allows you to create a new migration file with a name based on your input and the current timestamp, formatted as yyyyMMddHHmmss.
 
-For example if there is an image subfolder under your extension project workspace:
+The extension ensures that the file name is sanitized by replacing spaces with underscores, reducing multiple spaces to a single one, and converting the name to lowercase. This helps maintain a consistent and clean naming convention for your migration files.
 
-\!\[feature X\]\(images/feature-x.png\)
+Here's how to use it:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Right-click on the folder where you want to create the migration file.
+Select the "Create Migration" command.
+Enter the name of the migration in the input box that appears.
+The extension will create a new .sql file in the selected folder with a name in the format VyyyyMMddHHmmss\_\_your_migration_name.sql.
+
+\!\[feature X\]\(screenshot_of_context_menu.png\)
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+There are no specific requirements or dependencies for this extension.If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
 ## Extension Settings
 
@@ -24,48 +27,27 @@ For example:
 
 This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+- `myExtension.enable`: Enable/disable this extension.
+- `myExtension.thing`: Set to `blah` to do something.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+There are no known issues at the moment.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
+Initial release of flyway-migration-helper.
 
 ## Following extension guidelines
 
 Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+- [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
 
-## Working with Markdown
+### LICENSE
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+MIT
 
 **Enjoy!**
