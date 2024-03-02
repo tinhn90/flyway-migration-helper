@@ -2,6 +2,10 @@
   "name": "flyway-migration-helper",
   "displayName": "Flyway Migration helper",
   "description": "Generate migration for flyway",
+  "publisher": "tinhn90",
+  "author": {
+    "name": "Hoang Nhu Tin"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.87.0"
