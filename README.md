@@ -13,7 +13,7 @@ Select the "Create Migration" command.
 Enter the name of the migration in the input box that appears.
 The extension will create a new .sql file in the selected folder with a name in the format VyyyyMMddHHmmss\_\_your_migration_name.sql.
 
-\!\[feature X\]\(screenshot_of_context_menu.png\)
+![alt Image of context menu](images/create-migration.gif)
 
 ## Requirements
 
